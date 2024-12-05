@@ -4,13 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana</title>
+    <title>TRANSLATOR</title>
+    <style>
+        #container
+        {
+            display: block;
+            border: 1px solid black;
+            width: 90%;
+            padding: 2.5rem;
+            margin: 4rem;
+        }
+        header{
+            text-align: center;
+            font-size: x-large;
+            font-style: oblique;
+            padding-block: 1rem;
+            background-color:;
+        }
+        textarea {
+            width: 90%;
+            height:15vh;
+            margin: auto;
+            padding: 1rem;
+            display: block;
+        }
+        button {
+            margin: 1rem;
+            height: 2rem; 
+            display: block;
+            margin: auto;
+        }
 
+        #output {
+            padding: 1rem;
+            width: 90%;
+            height: 15vh;
+            border: 1px solid black;
+            display: block;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Talk Bananaaaa</h1>
+    <header><b>LANGUAGE TRANSLATOR</b></header>
+    <div id="container">
+    <textarea id="txt-input" placeholder="Write in english and we will convert it into Pirate's english!!"></textarea>
+    <br>
+    <button id ="btn-translate">Translate</button>
+    <br>
+    <div id="output"> </div>
+    </div>
     <script src="app.js"></script>
+    <footer></footer>
 </body>
 
 </html>
